@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Helper Programmers</title>
+   <link rel="icon" href="logo.jpg" type="image/icon type">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="gledihtml2.css" />
+  <nav class="navbar navbar-inverse" style="background-color: #000000e7;">
+  <div class="container-fluid"></div>
+    <div class="navbar-header">      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li  class="asctive"><a href="./gledi.html">Gledi</a></li>
+        <li  class="asctive"><a href="./home.html">Home</a></li>
+        <li  class="actsive"><a href="./contact.html">Contact</a></li>
+        <li  class="actsive"><a href="./about.html"></a></li>
+      </ul>
+  
+      <style>
+        .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #88126a;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+      </style>
+       
+       
+       
+       <style>
+        body {font-family: Arial, Helvetica, sans-serif;}  
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #615959;
+          box-sizing: border-box;
+        }       
+        /* Set a style for all buttons */
+        button {
+          background-color: #fcf9f9;
+          color: rgb(0, 0, 0);
+          padding: 1px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          font-size: 1rem;
+          border: none;
+          outline: none;
+          padding: 10px 20px;
+          border-radius: 10px;
+          background-color: rgb(255, 255, 255);           
+        }       
+        button:hover {
+          opacity: 0.8;
+        }       
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }       
+        /* Center the image and position the close button */
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }        
+        img.avatar {
+          width: 40%;
+          border-radius: 50%;
+        }       
+        .container {
+          padding: 16px;
+        }       
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }       
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0, 0, 0); /* Fallback color */
+          background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 89%; /* Could be more or less, depending on screen size */
+        }        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }       
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body style="background-color:rgba(0, 0, 0, 0.247);">    
+        <ul class="nav navbar-nav navbar-right">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>  
+        </ul>
+        </div>
+        </div>
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="container">
+              <label for="uname"><b>Emri</b></label>
+              <input type="text" placeholder="Vendos Emrin" name="uname" required>
+              <label for="psw"><b>Fjalekalimi</b></label>
+              <input type="password" placeholder="Vendos Fjalekalimin" name="psw" required>
+              <label><input type="checkbox" checked="checked" name="remember"> Me mbaje mend</label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Mbrapa</button>
+              <span class="psw">Harrova <a href>fjalekalimin?</a></span>
+            </div>
+          </form>
+        </div>
+        <script>
+        var modal = document.getElementById('id01');        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+      </script>
+        </nav> 
+
+     <div class="container text-center">
+    <p style="text-align:center;"  class="ex1"><b>Gledi</b></p>     
+  </div>
+</div>
+<style>
+p.ex1 {
+  font-size: 90px;
+}
+p.ex2 {
+  font-size: 50px;
+}
+p.ex3 {
+  font-size: 35px;
+}
+}
+p.ex4 {
+  font-size: 100px;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<img  align="center" src="logo6.jpg.png" " width="700" height="400" >
+<br>
+<br>
+<br>
+ <p style="text-align:center;" class="ex2"><b>THINK DIFFERENT!</b></p>
+<style>
+ ol {
+  position: relative; 
+  top: 10px;
+  left: 20px;
+}
+.box {
+  display: flex;
+  align-items: center;
+}
+
+h1,h3 {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+</style>
+<div class="box">
+  <h1 style="text-align:center;" ><i>Ne ju ndihmojme te zhvilloni biznesin<br> apo idete tuaja duke i pasqyruar ato ne<br> menyren me te mire me nje website te mirefillte.</i></h1>
+  <h3>
+    <ul>
+      <li>I JAPIM KUPTIM BIZNESIT TUAJ.</b></il>
+      </ul>
+        <br>
+        <ul>
+          <li>NDERTOJME DHE RREGULLOJME KODE.</b></il>
+        </ul>
+        <br>
+     <ul>
+        <li>PUNESOJME PERSONA QE KANE DESHIRE PUNEN.</b></il>
+        </ul>
+  </h3>
+</div>
+
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</br>
+<hr>
+</br>
+<center>
+<h2><b>Oraret tona</h2></b>
+</center>
+<table>
+  <tr>
+    <th>Dita</th>
+    <th>Ora</th>
+    <th>Programuesi</th>
+  </tr>
+  <tr>
+    <td>E hene</td>
+    <td>9:30 - 17:00</td>
+    <td>Gledi</td>
+  </tr>
+  <tr>
+    <td>E marte</td>
+    <td>8:00 - 16:30</td>
+    <td>Sildi</td>
+  </tr>
+  <tr>
+    <td>E merkure</td>
+    <td>9:00 - 17:00</td>
+    <td>Andrea</td>
+  </tr>
+  <tr>
+    <td>E enjte</td>
+    <td>8:30 - 16:00</td>
+    <td>Adriele</td>
+  </tr>
+  <tr>
+    <td>E premte</td>
+    <td>8:00 - 15:00</td>
+    <td>Elian</td>
+  </tr>
+ 
+</table>
+
+<style>
+  a:link, a:visited {
+    background-color:rgba(3, 3, 3, 0.247)
+    color: rgb(22, 22, 119);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(134, 145, 194);
+  }
+
+  
+  </style>
+<div class="text-center">
+  <p button><h3><a href="https://www.linkedin.com/jobs/"_blank><b>Vizitoni kete website nese jeni te interesuar per pune!</b></a></button>
+</div>
+</body>
+<br/>
+<center>
+  <video width="600" controls>
+    <source src="zyratedit.mp4" type="video/mp4">  
+    Your browser does not support HTML video.
+  </video>
+</center>
+<br/>  
+<br/>  
+<p style="text-align:center;" class="ex3"><i>Zyrat tona ofrojne sistem ajrimi te modernizuar, hapsira te bollshme dhe komoditet ne menyre qe programuesit te ndihen te relaksuar dhe te jene sa me produktiv.</i></p>
+<br/>
+<br/>  
+
+<hr>
+ <p style="text-align:center;"><b>Kontakt</b></p>
+      <p style="text-align:center;">0694819740</p>
+      <p style="text-align:center;">gledipasha3214@gmail.com</p>
+      <center>
+        <a href="https://www.instagram.com/websiteshqiptar/" class="fa fa-instagram">
+        <a href="https://www.facebook.com/groups/292488742498802" class="fa fa-facebook"></a>
+      </a></center>
+      <p style="text-align:center;"><b>Adresa</b></p>
+      <p style="text-align:center;">Rruga "Hamdi Pepo"</p>       
+        <div class="text-center">
+          <buttons><h5><a href="https://goo.gl/maps/Jy2dTCDC85xB9aRZ6"_blank><b>Location</b></a></h5></button>
+           
+</br>
+</html>
